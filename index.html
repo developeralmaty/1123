@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trading Quiz App</title>
+</head>
+<body>
+
+<header>
+    <h1>Trading Quiz App</h1>
+</header>
+
+<main>
+    <section id="question-section">
+        <h2 id="question">Question 1</h2>
+        <ul id="options">
+            <li><button onclick="checkAnswer(0)">Option 1</button></li>
+            <li><button onclick="checkAnswer(1)">Option 2</button></li>
+            <li><button onclick="checkAnswer(2)">Option 3</button></li>
+        </ul>
+    </section>
+
+    <section id="result-section" style="display:none;">
+        <p id="result"></p>
+        <button onclick="resetQuiz()">Restart Quiz</button>
+    </section>
+</main>
+
+<script src="quiz.js"></script>
+</body>
+</html>
